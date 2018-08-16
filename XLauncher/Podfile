@@ -1,0 +1,21 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+#必须指明仓库地址
+#私有仓库
+source 'https://github.com/wangpo/MyPrivateaPods.git'
+#公有仓库
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'XLauncher' do
+    pod 'SGNetworkService'
+    pod 'FMDB'
+    pod 'SDWebImage'
+    pod 'OAStackView'
+    pod 'Masonry'
+    pod 'FDFullscreenPopGesture'
+    pod 'IQKeyboardManager'
+    pod 'MJRefresh'
+    pod 'MBProgressHUD'
+    pod 'UITableView+FDTemplateLayoutCell'
+end
