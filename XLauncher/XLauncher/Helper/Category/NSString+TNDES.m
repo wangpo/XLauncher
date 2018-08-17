@@ -5,6 +5,17 @@
 //  Created by wangpo on 2018/4/12.
 //  Copyright © 2018年 思源. All rights reserved.
 //
+//
+/*
+安卓的机密方式：
+public static final String ALGORITHM_DES = "DES/CBC/PKCS5Padding";  
+
+ kCCOptionPKCS7Padding ： 运用CBC加密模式，并且使用PKCS7Padding的填充模式进行加密
+kCCOptionPKCS7Padding|kCCOptionECBMode，运用了ECB加密模式，并且使用PKCS7Padding的填充模式进行加密
+
+
+IV向量：IV是CBC模式的初始向量，必须一致
+*/
 
 #import "NSString+TNDES.h"
 #import <CommonCrypto/CommonCryptor.h>
